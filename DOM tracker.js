@@ -1,6 +1,6 @@
-import danoneFramework from '../settings';
+import xxxx from '../settings';
 
-class ValtTagManager {
+class trackTagManager{
   constructor() {
     this.allDmElements = Array.from(document.querySelectorAll('[data-dm]'));
     this.allDmComponents = Array.from(document.querySelectorAll('[data-dm^="component"]'));
@@ -132,7 +132,7 @@ class ValtTagManager {
 */
 if (!danoneFramework.settings.wcmMode) {
 
-  window.digitalData = new ValtTagManager();
+  window.digitalData = new trackTagManager();
 
   if (document.readyState === 'complete' || document.readyState === 'loaded') {
     window.digitalData.init();
